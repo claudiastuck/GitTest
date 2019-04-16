@@ -18,68 +18,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yjS-hh-nEq">
-                                <rect key="frame" x="32" y="20" width="123" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sMG-qo-FP1">
-                                <rect key="frame" x="223" y="20" width="123" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kxe-Yt-Fn8">
-                                <rect key="frame" x="32" y="158" width="123" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CQL-iV-JSl">
-                                <rect key="frame" x="223" y="158" width="123" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9rT-fN-AFc">
-                                <rect key="frame" x="132" y="312" width="123" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npK-Yr-UN0">
-                                <rect key="frame" x="32" y="125" width="123" height="36"/>
+                                <rect key="frame" x="32" y="20" width="123" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pick 1"/>
                                 <connections>
                                     <action selector="OneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aPF-t1-OFp"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yjS-hh-nEq">
+                                <rect key="frame" x="32" y="20" width="123" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQQ-Cf-JQ1">
-                                <rect key="frame" x="223" y="125" width="123" height="36"/>
+                                <rect key="frame" x="223" y="20" width="123" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pick 2"/>
                                 <connections>
-                                    <action selector="OneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MuW-kQ-o4R"/>
                                     <action selector="TwoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="agJ-Ne-fh8"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sMG-qo-FP1">
+                                <rect key="frame" x="223" y="20" width="123" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qX-Di-YvM">
-                                <rect key="frame" x="32" y="263" width="123" height="41"/>
+                                <rect key="frame" x="32" y="158" width="123" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pick 3"/>
                                 <connections>
-                                    <action selector="OneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="62o-p7-TrG"/>
                                     <action selector="ThreeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2rw-Z7-TE1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb5-k4-cpb">
-                                <rect key="frame" x="223" y="263" width="123" height="41"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kxe-Yt-Fn8">
+                                <rect key="frame" x="32" y="158" width="123" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pick 4"/>
-                                <connections>
-                                    <action selector="FourButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWP-Mu-SpR"/>
-                                    <action selector="OneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w78-oW-QVf"/>
-                                </connections>
-                            </button>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqn-uJ-qzL">
-                                <rect key="frame" x="132" y="416" width="123" height="34"/>
+                                <rect key="frame" x="132" y="312" width="123" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pick 5"/>
                                 <connections>
                                     <action selector="FiveButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AYE-ax-Xml"/>
-                                    <action selector="OneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WB3-hh-Unc"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9rT-fN-AFc">
+                                <rect key="frame" x="132" y="312" width="123" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb5-k4-cpb">
+                                <rect key="frame" x="223" y="158" width="123" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pick 4"/>
+                                <connections>
+                                    <action selector="FourButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWP-Mu-SpR"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CQL-iV-JSl">
+                                <rect key="frame" x="223" y="158" width="123" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqk-9X-smk">
+                                <rect key="frame" x="207" y="453" width="139" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Rules">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rulesTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VAJ-JQ-47R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -96,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-111.2" y="-43.628185907046479"/>
+            <point key="canvasLocation" x="-1377" y="-326"/>
         </scene>
     </scenes>
 </document>

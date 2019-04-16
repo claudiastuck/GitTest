@@ -8,6 +8,12 @@
 
 import UIKit
 
+// so what i did today was add animations to each button when it's pressed to get larger and spin
+// I also added a rules link to take it to a website
+// so far we have 3 stretches and haven't even started the real project !!!!!
+// actually i think it's four : AppIcon, animations, rules link, and I think for using git hub
+// only one more to get a 100, and if we keep it so the colors change we will be able to have the 5 !! :)
+
 class ViewController: UIViewController
 {
     @IBOutlet weak var imageOne: UIImageView!
@@ -19,29 +25,86 @@ class ViewController: UIViewController
     let computerChoiceArray = [1,2,3,4,5]
     //i'm not sure how many numbers or what numbers you put in here but i just started with these
     
+    // I put the buttons behind the images so when you tap on the image the button will then work
+    // I am going to try to add animations today based on my RPS ones for the buttons
     @IBAction func OneButtonTapped(_ sender: UIButton)
     {
+        
         addNumbers(pickedNumber: 1)
+        
+        print("one tapped")
+      
+        UIView.animate(withDuration: 1.0, animations: {
+            
+            self.imageOne.transform = CGAffineTransform(scaleX: 5, y: 5)
+            self.imageOne.transform = CGAffineTransform.identity
+            
+            self.imageOne.transform = CGAffineTransform(rotationAngle: .pi)
+            self.imageOne.transform = CGAffineTransform.identity
+            
+        })
     }
     
     @IBAction func TwoButtonTapped(_ sender: UIButton)
+   
     {
+        
         addNumbers(pickedNumber: 2)
+        
+        print("two tapped")
+        
+        UIView.animate(withDuration: 1.0, animations: {
+            self.imageTwo.transform = CGAffineTransform(scaleX: 5, y: 5)
+            self.imageTwo.transform = CGAffineTransform.identity
+            
+            self.imageTwo.transform = CGAffineTransform(rotationAngle: .pi)
+            self.imageTwo.transform = CGAffineTransform.identity
+        })
+        
     }
     
     @IBAction func ThreeButtonTapped(_ sender: UIButton)
     {
         addNumbers(pickedNumber: 3)
+        print("three tapped")
+        
+        UIView.animate(withDuration: 1.0, animations: {
+            self.imageThree.transform = CGAffineTransform(scaleX: 5, y: 5)
+            self.imageThree.transform = CGAffineTransform.identity
+            
+            self.imageThree.transform = CGAffineTransform(rotationAngle: .pi)
+            self.imageThree.transform = CGAffineTransform.identity
+        
+        })
     }
     
     @IBAction func FourButtonTapped(_ sender: UIButton)
     {
+        
         addNumbers(pickedNumber: 4)
+        print("four tapped")
+        
+        UIView.animate(withDuration: 1.0, animations: {
+            self.ImageFour.transform = CGAffineTransform(scaleX: 5, y: 5)
+            self.ImageFour.transform = CGAffineTransform.identity
+            
+            self.ImageFour.transform = CGAffineTransform(rotationAngle: .pi)
+            self.ImageFour.transform = CGAffineTransform.identity
+        })
     }
     
     @IBAction func FiveButtonTapped(_ sender: UIButton)
     {
         addNumbers(pickedNumber: 5)
+        print("five tapped")
+        
+        UIView.animate(withDuration: 1.0, animations: {
+            self.ImageFive.transform = CGAffineTransform(scaleX: 5, y: 5)
+            self.ImageFive.transform = CGAffineTransform.identity
+            
+            self.ImageFive.transform = CGAffineTransform(rotationAngle: .pi)
+            self.ImageFive.transform = CGAffineTransform.identity
+        })
     }
     //if you know an easier way to do any of this just get rid of what i did because i don't care
     //just do it however you want
@@ -73,9 +136,16 @@ class ViewController: UIViewController
             view.backgroundColor = UIColor.green
         }
         //the background color was just to see if it worked but we'll change it to be something else that says the winner
-        
+       
+      
     }
-    
+
+    @IBAction func rulesTapped(_ sender: UIButton)
+    {
+        guard let url = URL(string: "http://healthy.uwaterloo.ca/museum/VirtualExhibits/Brueghel/odds.html") else { return }
+        UIApplication.shared.open(url)
+
+    }
     
 }
 
