@@ -19,67 +19,67 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npK-Yr-UN0">
-                                <rect key="frame" x="32" y="20" width="123" height="105"/>
+                                <rect key="frame" x="32" y="135" width="123" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pick 1"/>
+                                <state key="normal" title=" "/>
                                 <connections>
                                     <action selector="OneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aPF-t1-OFp"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yjS-hh-nEq">
-                                <rect key="frame" x="32" y="20" width="123" height="105"/>
+                                <rect key="frame" x="56" y="135" width="123" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQQ-Cf-JQ1">
-                                <rect key="frame" x="223" y="20" width="123" height="105"/>
+                                <rect key="frame" x="223" y="135" width="123" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pick 2"/>
+                                <state key="normal" title="  "/>
                                 <connections>
                                     <action selector="TwoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="agJ-Ne-fh8"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sMG-qo-FP1">
-                                <rect key="frame" x="223" y="20" width="123" height="105"/>
+                                <rect key="frame" x="203" y="135" width="123" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qX-Di-YvM">
-                                <rect key="frame" x="32" y="158" width="123" height="105"/>
+                                <rect key="frame" x="32" y="273" width="123" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pick 3"/>
+                                <state key="normal" title="  "/>
                                 <connections>
                                     <action selector="ThreeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2rw-Z7-TE1"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kxe-Yt-Fn8">
-                                <rect key="frame" x="32" y="158" width="123" height="105"/>
+                                <rect key="frame" x="56" y="261" width="123" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqn-uJ-qzL">
-                                <rect key="frame" x="132" y="312" width="123" height="94"/>
+                                <rect key="frame" x="132" y="427" width="123" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pick 5"/>
+                                <state key="normal" title="  "/>
                                 <connections>
                                     <action selector="FiveButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AYE-ax-Xml"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9rT-fN-AFc">
-                                <rect key="frame" x="132" y="312" width="123" height="105"/>
+                                <rect key="frame" x="126" y="386" width="123" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb5-k4-cpb">
-                                <rect key="frame" x="223" y="158" width="123" height="105"/>
+                                <rect key="frame" x="223" y="273" width="123" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pick 4"/>
+                                <state key="normal" title="  "/>
                                 <connections>
                                     <action selector="FourButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWP-Mu-SpR"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CQL-iV-JSl">
-                                <rect key="frame" x="223" y="158" width="123" height="105"/>
+                                <rect key="frame" x="203" y="261" width="123" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqk-9X-smk">
-                                <rect key="frame" x="207" y="453" width="139" height="73"/>
+                                <rect key="frame" x="118" y="552" width="139" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Rules">
@@ -89,6 +89,34 @@
                                     <action selector="rulesTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VAJ-JQ-47R"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The sum of the numbers is..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUq-NN-LuO">
+                                <rect key="frame" x="43" y="524" width="288" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you want to be even or odd?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qd9-wK-pYb">
+                                <rect key="frame" x="84" y="39" width="273" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The computer chose..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5q-6X-MLG">
+                                <rect key="frame" x="43" y="488" width="288" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Even or Odd?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1lH-jh-Ssq">
+                                <rect key="frame" x="145" y="84" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -96,14 +124,17 @@
                     <connections>
                         <outlet property="ImageFive" destination="9rT-fN-AFc" id="0t4-Ju-ACD"/>
                         <outlet property="ImageFour" destination="CQL-iV-JSl" id="P8D-o8-VjC"/>
+                        <outlet property="computerChoiceLabel" destination="E5q-6X-MLG" id="KyK-RV-F7V"/>
+                        <outlet property="evenOddTextField" destination="1lH-jh-Ssq" id="lQM-Kw-AdU"/>
                         <outlet property="imageOne" destination="yjS-hh-nEq" id="fUu-3Z-Y0x"/>
                         <outlet property="imageThree" destination="kxe-Yt-Fn8" id="6ij-cr-jSR"/>
                         <outlet property="imageTwo" destination="sMG-qo-FP1" id="lX0-Qe-6aT"/>
+                        <outlet property="sumLabel" destination="kUq-NN-LuO" id="TBC-Bk-SjZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1377" y="-326"/>
+            <point key="canvasLocation" x="-1378.4000000000001" y="-326.08695652173918"/>
         </scene>
     </scenes>
 </document>
