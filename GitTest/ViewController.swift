@@ -28,6 +28,7 @@ class ViewController: UIViewController
     @IBOutlet weak var sumLabel: UILabel!
     @IBOutlet weak var computerChoiceLabel: UILabel!
     @IBOutlet weak var evenOddTextField: UITextField!
+    @IBOutlet weak var winnerLabel: UILabel!
     
     let computerChoiceArray = [1,2,3,4,5]
     @IBAction func OneButtonTapped(_ sender: UIButton)
@@ -130,7 +131,6 @@ class ViewController: UIViewController
         if sum % 2 == 0
             //even sum
         {
-            var sum = "even"
             view.backgroundColor = UIColor.magenta
             sumLabel.text = "The sum of the numbers is even!"
         }
@@ -138,14 +138,38 @@ class ViewController: UIViewController
         else
             //odd sum
         {
-            var sum = "odd"
             view.backgroundColor = UIColor.green
             sumLabel.text = "The sum of the numbers is odd!"
         }
+        
+        
+        if evenOddTextField.text == "even"
+        {
+            if sum % 2 == 0
+            {
+                winnerLabel.text = "You Win!"
+            }
+            else
+            {
+                winnerLabel.text = "You Lose"
+            }
+        }
+        if evenOddTextField.text == "odd"
+        {
+            if sum % 2 == 0
+            {
+                winnerLabel.text = "You Lose"
+            }
+            else
+            {
+                winnerLabel.text = "You Win"
+            }
+        }
+        
+
 
         //the background color was just to see if it worked but we'll change it to be something else that says the winner
-       
-      
+        
     }
 
     @IBAction func rulesTapped(_ sender: UIButton)
@@ -154,5 +178,7 @@ class ViewController: UIViewController
         UIApplication.shared.open(url)
 
     }
+    
+    
     
 }
