@@ -108,6 +108,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="oddEvenTextfieldTapped:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="id3-R9-Yav"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCs-PT-i8U">
                                 <rect key="frame" x="85" y="561" width="205" height="60"/>
@@ -124,6 +127,34 @@
                                     <action selector="OneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aPF-t1-OFp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Computer Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dho-nm-ZBp">
+                                <rect key="frame" x="0.0" y="386" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjd-D3-Yat">
+                                <rect key="frame" x="270" y="386" width="96" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwz-we-XMU">
+                                <rect key="frame" x="35" y="413" width="57" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNc-Ug-0kJ">
+                                <rect key="frame" x="288" y="417" width="60" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -131,18 +162,20 @@
                     <connections>
                         <outlet property="ImageFive" destination="9rT-fN-AFc" id="0t4-Ju-ACD"/>
                         <outlet property="ImageFour" destination="CQL-iV-JSl" id="P8D-o8-VjC"/>
+                        <outlet property="compScore" destination="vwz-we-XMU" id="RyB-dM-ASz"/>
                         <outlet property="computerChoiceLabel" destination="E5q-6X-MLG" id="KyK-RV-F7V"/>
                         <outlet property="evenOddTextField" destination="1lH-jh-Ssq" id="lQM-Kw-AdU"/>
                         <outlet property="imageOne" destination="yjS-hh-nEq" id="fUu-3Z-Y0x"/>
                         <outlet property="imageThree" destination="kxe-Yt-Fn8" id="6ij-cr-jSR"/>
                         <outlet property="imageTwo" destination="sMG-qo-FP1" id="lX0-Qe-6aT"/>
+                        <outlet property="playerScore" destination="GNc-Ug-0kJ" id="mg6-vh-wFe"/>
                         <outlet property="sumLabel" destination="kUq-NN-LuO" id="TBC-Bk-SjZ"/>
                         <outlet property="winnerLabel" destination="VCs-PT-i8U" id="yrX-TZ-emD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1378.4000000000001" y="-326.08695652173918"/>
+            <point key="canvasLocation" x="-2058.4000000000001" y="-839.73013493253382"/>
         </scene>
     </scenes>
 </document>

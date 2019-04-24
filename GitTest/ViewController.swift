@@ -6,19 +6,16 @@
 //  Copyright © 2019 Claudia's Apps. All rights reserved.
 //
 
+
+
+// Emma our app works and we have a bunch of stretches on it way to go killing it with the major coding.  I added in the code that dismisses the keyboard when you hit return and when the screen is tapped. The code you did was great!!!
+// Stretches: AppIcon, Animations, Background ColorChanging, Rules link,
+// I am going to add a score board for another stretch, but he might count the emoji thing as one too I'm not sure but we can always get more than a 100
+
 import UIKit
 
 
-// actually i think it's four : AppIcon, animations, rules link, and I think for using git hub
-// only one more to get a 100, and if we keep it so the colors change we will be able to have the 5 !! :)
-
-
-// i used a textfield and then the player enters their score into that
-// if the text there matches the sum then there's a label at the bottom that will say that you won or you lost
-// i think that we're pretty much done
-
-
-
+// this is what i was talking about look at the paragraph further down and you'll know
 
 class ViewController: UIViewController
 {
@@ -31,6 +28,29 @@ class ViewController: UIViewController
     @IBOutlet weak var computerChoiceLabel: UILabel!
     @IBOutlet weak var evenOddTextField: UITextField!
     @IBOutlet weak var winnerLabel: UILabel!
+    
+    @IBOutlet weak var compScore: UILabel!
+    @IBOutlet weak var playerScore: UILabel!
+    
+  
+//    var compScore = 0
+//    var playerScore = 0
+    
+    
+    // this is the var thing not sure what is wrong i fixed the bottom right at the end of class look at the bottom of this i wrote more about what was happening
+    // if you don't have time i can try to figure it out tmr
+    // you can uncomment all of it to see what's wrong and the thing at the bottom too
+    
+   
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        self.view.endEditing(true)
+        return true
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        self.view.endEditing(true)
+    }
     
     let computerChoiceArray = [1,2,3,4,5]
     @IBAction func OneButtonTapped(_ sender: UIButton)
@@ -50,6 +70,8 @@ class ViewController: UIViewController
             
         })
     }
+    
+    
     
     @IBAction func TwoButtonTapped(_ sender: UIButton)
    
@@ -172,6 +194,21 @@ class ViewController: UIViewController
             }
         }
         
+//        if winnerLabel.text == "You Lose 😥"
+//        {
+//            compScore = compScore + 1
+//            compScore.text = "\(compScore)"
+//        }
+//        else if winnerLabel.text == "You win! 😃"
+//        {
+//            playerScore = playerScore + 1
+//            playerScore.text = "\(playerScore)"
+//        }
+//
+        
+        // this is the code for the scoreboard there are no errors in this anymore, but now it's saying there is a problem with the vars that i made at the top.  I'm not sure why this isn't wokring because i did the same exact thing for RPS.  If you can ask your teacher that would be great cause mr walters won't be here tomorrow either.
+        // feel free to uncomment it to see what's wrong
+        
     }
 
     @IBAction func rulesTapped(_ sender: UIButton)
@@ -186,6 +223,6 @@ class ViewController: UIViewController
         return true
     }
    
-    
+
     
 }
