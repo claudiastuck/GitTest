@@ -13,9 +13,11 @@ import UIKit
 // only one more to get a 100, and if we keep it so the colors change we will be able to have the 5 !! :)
 
 
-// i changed the background colors so you can see the text and then I added the two labels that will say what the computer chose and what the sum is
-// i also tried to figure out how to use the player's choice of even or odd but i couldn't figure out what to use so that we had access to that variable in another if statement
-// not that what I just said made any sense but i think that's the only thing really left to do
+// i used a textfield and then the player enters their score into that
+// if the text there matches the sum then there's a label at the bottom that will say that you won or you lost
+// i think that we're pretty much done
+
+
 
 
 class ViewController: UIViewController
@@ -124,6 +126,10 @@ class ViewController: UIViewController
    
     func addNumbers(pickedNumber : Int)
     {
+        func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+        {
+            self.view.endEditing(true)
+        }
         let computerChoice = computerChoiceArray.randomElement()
         computerChoiceLabel.text = "The computer chose \(computerChoice!)"
         let sum = computerChoice! + pickedNumber
@@ -138,7 +144,7 @@ class ViewController: UIViewController
         else
             //odd sum
         {
-            view.backgroundColor = UIColor.green
+            view.backgroundColor = UIColor.blue
             sumLabel.text = "The sum of the numbers is odd!"
         }
         
@@ -147,28 +153,24 @@ class ViewController: UIViewController
         {
             if sum % 2 == 0
             {
-                winnerLabel.text = "You Win!"
+                winnerLabel.text = "You Win! 😃"
             }
             else
             {
-                winnerLabel.text = "You Lose"
+                winnerLabel.text = "You Lose 😢"
             }
         }
         if evenOddTextField.text == "odd"
         {
             if sum % 2 == 0
             {
-                winnerLabel.text = "You Lose"
+                winnerLabel.text = "You Lose 😢"
             }
             else
             {
-                winnerLabel.text = "You Win"
+                winnerLabel.text = "You Win! 😃"
             }
         }
-        
-
-
-        //the background color was just to see if it worked but we'll change it to be something else that says the winner
         
     }
 
@@ -178,7 +180,12 @@ class ViewController: UIViewController
         UIApplication.shared.open(url)
 
     }
-    
+    func textFieldReturn(_ textField: UITextField) -> Bool
+    {
+        self.view.endEditing(true)
+        return true
+    }
+   
     
     
 }
