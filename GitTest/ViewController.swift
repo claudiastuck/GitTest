@@ -9,9 +9,10 @@
 // Stretches: AppIcon, Animations, Background ColorChanging, Rules link,
 
 
-// i'm pretty sure the problem was that you had the labels and the new variables callled the same thing but i'm not completely sure
-// he wasn't sure and i might have messed it up more so sorry
-// we'll figure it out but it looks good and we're pretty much there
+// ok as of now it runs but it just doesn't work.  I'm not sure tho today in class i will try some new things but i might work on the stretches for the assignment notebook too
+// if i can't figure it out i will talk to mr walter tomorrow about it he might be subbing my second block cause my teacher won't be her tomorrow and he's subbed for us before
+
+
 
 
 
@@ -30,12 +31,15 @@ class ViewController: UIViewController
     @IBOutlet weak var evenOddTextField: UITextField!
     @IBOutlet weak var winnerLabel: UILabel!
     
-    @IBOutlet weak var compScore: UILabel!
-    @IBOutlet weak var playerScore: UILabel!
+    @IBOutlet weak var myCompScoreLabel: UILabel!
+    @IBOutlet weak var myPlayerScoreLabel: UILabel!
     
-  
+    
     var computerScore = 0
     var playersScore = 0
+    
+    // well anyway pretty much so sorry i couldn't really fix it, i promise it'll be done tomorrow. If he's my sub second block i'm going to see if he'll let me come up and have him fix it then
+    // atleast i'll talk to him about it, if he doesn't let me do it then
     
    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
@@ -190,15 +194,30 @@ class ViewController: UIViewController
             }
         }
         
+//        if myResultLabel.text == "You won."
+//        {
+//            userScore = userScore + 1
+//            myPointsLabel.text = "\(userScore)"
+//        }
+//
+//        else if myResultLabel.text == "You lost."
+//        {
+//            compScore = compScore + 1
+//            computerPointsLabel.text = "\(compScore)"
+//        }
+        
+        // this is the code from my last project that worked,  not sure whats happening but it's better because now it's saying that the var is an int, which is good
+        // the thing is it isn't failing, it will still run, it's just  the scoreboard isn't working at all
+//
         if winnerLabel.text == "You Lose 😥"
         {
-            computerScore = Int(compScore.text!)! + 1
-            compScore.text = "\(computerScore)"
+            computerScore = computerScore + 1
+           myCompScoreLabel.text = "\(computerScore)"
         }
         else if winnerLabel.text == "You win! 😃"
         {
-            playersScore = Int(playerScore.text!)! + 1
-            playerScore.text = "\(playersScore)"
+            playersScore = playersScore + 1
+            myPlayerScoreLabel.text = "\(playersScore)"
         }
 
     }

@@ -162,13 +162,13 @@
                     <connections>
                         <outlet property="ImageFive" destination="9rT-fN-AFc" id="0t4-Ju-ACD"/>
                         <outlet property="ImageFour" destination="CQL-iV-JSl" id="P8D-o8-VjC"/>
-                        <outlet property="compScore" destination="vwz-we-XMU" id="RyB-dM-ASz"/>
                         <outlet property="computerChoiceLabel" destination="E5q-6X-MLG" id="KyK-RV-F7V"/>
                         <outlet property="evenOddTextField" destination="1lH-jh-Ssq" id="lQM-Kw-AdU"/>
                         <outlet property="imageOne" destination="yjS-hh-nEq" id="fUu-3Z-Y0x"/>
                         <outlet property="imageThree" destination="kxe-Yt-Fn8" id="6ij-cr-jSR"/>
                         <outlet property="imageTwo" destination="sMG-qo-FP1" id="lX0-Qe-6aT"/>
-                        <outlet property="playerScore" destination="GNc-Ug-0kJ" id="mg6-vh-wFe"/>
+                        <outlet property="myCompScoreLabel" destination="vwz-we-XMU" id="pbx-Nx-2LQ"/>
+                        <outlet property="myPlayerScoreLabel" destination="GNc-Ug-0kJ" id="FNt-Ql-4jd"/>
                         <outlet property="sumLabel" destination="kUq-NN-LuO" id="TBC-Bk-SjZ"/>
                         <outlet property="winnerLabel" destination="VCs-PT-i8U" id="yrX-TZ-emD"/>
                     </connections>
