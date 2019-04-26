@@ -6,13 +6,13 @@
 //  Copyright © 2019 Claudia's Apps. All rights reserved.
 //
 
-// Stretches: AppIcon, Animations, Background ColorChanging, Rules link,
+// Stretches: AppIcon, Animations, Background ColorChanging, Rules link, scoreoard, text color changing(maybe), git hub, reset label
 
 import UIKit
-// i talked to him during class and we fixed the score board
-//we also changed the text color when the background color changes and the scores are animated now
-//we changed the scoreboard by making it into two functions instead of if statements, even though he thought it looked good and said it should have worked
-//you can change the font color and background color too. i feel like you can just see everything better now than with dark colors
+
+// yep great job changing it and changing the colors looks really good
+// i'll look for more stretches to do but i think we are already at 100
+// i added to the add that once on of the players gets to 10 either the computer or the player the numbers get reseat to nothing, and a label pops up that either says you won this round or you lost this round and that the game is reset.
 
 
 class ViewController: UIViewController
@@ -32,6 +32,7 @@ class ViewController: UIViewController
     @IBOutlet weak var winnerLabel: UILabel!
     @IBOutlet weak var myCompScoreLabel: UILabel!
     @IBOutlet weak var myPlayerScoreLabel: UILabel!
+    @IBOutlet weak var myResetLabel: UILabel!
     
     var labelArray = [UILabel]()
     var computerScore = 0
@@ -128,6 +129,7 @@ class ViewController: UIViewController
    
     func addNumbers(pickedNumber : Int)
     {
+        myResetLabel.text = ""
         func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
         {
             self.view.endEditing(true)
@@ -187,9 +189,28 @@ class ViewController: UIViewController
                 winnerLabel.text = "You Win! 😃"
                 playerWins()
             }
+            
         }
         
+        if myPlayerScoreLabel.text == "10"
+        {
+            myPlayerScoreLabel.text = "0"
+            myCompScoreLabel.text = "0"
+            playersScore = 0
+            computerScore = 0
+            myResetLabel.text = "You have won this round. Now the game has been reset."
+        }
+        else if myCompScoreLabel.text == "10"
+        {
+            myPlayerScoreLabel.text = "0"
+            myCompScoreLabel.text = "0"
+            playersScore = 0
+            computerScore = 0
+            myResetLabel.text = "You have lost this round.  Now the game has been reset."
+        }
     }
+    
+
     
     func compWins()
     {

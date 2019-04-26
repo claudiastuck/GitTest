@@ -70,17 +70,6 @@
                                 <rect key="frame" x="203" y="261" width="123" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqk-9X-smk">
-                                <rect key="frame" x="118" y="590" width="139" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Go to Rules">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="rulesTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VAJ-JQ-47R"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The sum of the numbers is..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUq-NN-LuO">
                                 <rect key="frame" x="43" y="524" width="288" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -155,6 +144,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udr-2z-E66">
+                                <rect key="frame" x="0.0" y="620" width="240" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqk-9X-smk">
+                                <rect key="frame" x="248" y="620" width="126" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Go to Rules">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rulesTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VAJ-JQ-47R"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -171,6 +178,7 @@
                         <outlet property="imageTwo" destination="sMG-qo-FP1" id="lX0-Qe-6aT"/>
                         <outlet property="myCompScoreLabel" destination="vwz-we-XMU" id="pbx-Nx-2LQ"/>
                         <outlet property="myPlayerScoreLabel" destination="GNc-Ug-0kJ" id="FNt-Ql-4jd"/>
+                        <outlet property="myResetLabel" destination="udr-2z-E66" id="wo4-Yn-0El"/>
                         <outlet property="playerLabel" destination="Hjd-D3-Yat" id="oDb-OP-pM6"/>
                         <outlet property="rulesLabel" destination="Dqk-9X-smk" id="b54-ic-t65"/>
                         <outlet property="sumLabel" destination="kUq-NN-LuO" id="TBC-Bk-SjZ"/>
@@ -179,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2058.4000000000001" y="-839.73013493253382"/>
+            <point key="canvasLocation" x="-2074.4000000000001" y="-1031.3343328335832"/>
         </scene>
     </scenes>
 </document>
