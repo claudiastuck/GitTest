@@ -8,19 +8,19 @@
 
 // Stretches: AppIcon, Animations, Background ColorChanging, Rules link,
 
-
-// ok as of now it runs but it just doesn't work.  I'm not sure tho today in class i will try some new things but i might work on the stretches for the assignment notebook too
-// if i can't figure it out i will talk to mr walter tomorrow about it he might be subbing my second block cause my teacher won't be her tomorrow and he's subbed for us before
-
-
-
-
-
 import UIKit
+// i talked to him during class and we fixed the score board
+//we also changed the text color when the background color changes and the scores are animated now
+//we changed the scoreboard by making it into two functions instead of if statements, even though he thought it looked good and said it should have worked
+//you can change the font color and background color too. i feel like you can just see everything better now than with dark colors
 
 
 class ViewController: UIViewController
 {
+    @IBOutlet weak var rulesLabel: UIButton!
+    @IBOutlet weak var playerLabel: UILabel!
+    @IBOutlet weak var evenOddLabel: UILabel!
+    @IBOutlet weak var compLabel: UILabel!
     @IBOutlet weak var imageOne: UIImageView!
     @IBOutlet weak var imageTwo: UIImageView!
     @IBOutlet weak var imageThree: UIImageView!
@@ -30,23 +30,19 @@ class ViewController: UIViewController
     @IBOutlet weak var computerChoiceLabel: UILabel!
     @IBOutlet weak var evenOddTextField: UITextField!
     @IBOutlet weak var winnerLabel: UILabel!
-    
     @IBOutlet weak var myCompScoreLabel: UILabel!
     @IBOutlet weak var myPlayerScoreLabel: UILabel!
     
-    
+    var labelArray = [UILabel]()
     var computerScore = 0
     var playersScore = 0
     
-    // well anyway pretty much so sorry i couldn't really fix it, i promise it'll be done tomorrow. If he's my sub second block i'm going to see if he'll let me come up and have him fix it then
-    // atleast i'll talk to him about it, if he doesn't let me do it then
-    
-   
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
         self.view.endEditing(true)
         return true
     }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         self.view.endEditing(true)
@@ -55,83 +51,66 @@ class ViewController: UIViewController
     let computerChoiceArray = [1,2,3,4,5]
     @IBAction func OneButtonTapped(_ sender: UIButton)
     {
-        
         addNumbers(pickedNumber: 1)
-        
         print("one tapped")
-      
-        UIView.animate(withDuration: 1.0, animations: {
-            
-            self.imageOne.transform = CGAffineTransform(scaleX: 5, y: 5)
-            self.imageOne.transform = CGAffineTransform.identity
-            
-            self.imageOne.transform = CGAffineTransform(rotationAngle: .pi)
-            self.imageOne.transform = CGAffineTransform.identity
-            
-        })
-    }
-    
-    
+        UIView.animate(withDuration: 1.0, animations:
+            {
+                self.imageOne.transform = CGAffineTransform(scaleX: 5, y: 5)
+                self.imageOne.transform = CGAffineTransform.identity
+                
+                self.imageOne.transform = CGAffineTransform(rotationAngle: .pi)
+                self.imageOne.transform = CGAffineTransform.identity
+        })    }
     
     @IBAction func TwoButtonTapped(_ sender: UIButton)
-   
     {
-        
         addNumbers(pickedNumber: 2)
-        
         print("two tapped")
-        
-        UIView.animate(withDuration: 1.0, animations: {
-            self.imageTwo.transform = CGAffineTransform(scaleX: 5, y: 5)
-            self.imageTwo.transform = CGAffineTransform.identity
-            
-            self.imageTwo.transform = CGAffineTransform(rotationAngle: .pi)
-            self.imageTwo.transform = CGAffineTransform.identity
-        })
-        
-    }
+        UIView.animate(withDuration: 1.0, animations:
+            {
+                self.imageTwo.transform = CGAffineTransform(scaleX: 5, y: 5)
+                self.imageTwo.transform = CGAffineTransform.identity
+                self.imageTwo.transform = CGAffineTransform(rotationAngle: .pi)
+                self.imageTwo.transform = CGAffineTransform.identity
+        })    }
     
     @IBAction func ThreeButtonTapped(_ sender: UIButton)
     {
         addNumbers(pickedNumber: 3)
         print("three tapped")
-        
-        UIView.animate(withDuration: 1.0, animations: {
-            self.imageThree.transform = CGAffineTransform(scaleX: 5, y: 5)
-            self.imageThree.transform = CGAffineTransform.identity
-            
-            self.imageThree.transform = CGAffineTransform(rotationAngle: .pi)
-            self.imageThree.transform = CGAffineTransform.identity
-        
-        })
-    }
+        UIView.animate(withDuration: 1.0, animations:
+            {
+                self.imageThree.transform = CGAffineTransform(scaleX: 5, y: 5)
+                self.imageThree.transform = CGAffineTransform.identity
+                
+                self.imageThree.transform = CGAffineTransform(rotationAngle: .pi)
+                self.imageThree.transform = CGAffineTransform.identity
+        })    }
     
     @IBAction func FourButtonTapped(_ sender: UIButton)
     {
-        
         addNumbers(pickedNumber: 4)
         print("four tapped")
-        
-        UIView.animate(withDuration: 1.0, animations: {
-            self.ImageFour.transform = CGAffineTransform(scaleX: 5, y: 5)
-            self.ImageFour.transform = CGAffineTransform.identity
-            
-            self.ImageFour.transform = CGAffineTransform(rotationAngle: .pi)
-            self.ImageFour.transform = CGAffineTransform.identity
-        })
-    }
+        UIView.animate(withDuration: 1.0, animations:
+            {
+                self.ImageFour.transform = CGAffineTransform(scaleX: 5, y: 5)
+                self.ImageFour.transform = CGAffineTransform.identity
+                
+                self.ImageFour.transform = CGAffineTransform(rotationAngle: .pi)
+                self.ImageFour.transform = CGAffineTransform.identity
+        })    }
     
     @IBAction func FiveButtonTapped(_ sender: UIButton)
     {
         addNumbers(pickedNumber: 5)
         print("five tapped")
-        
-        UIView.animate(withDuration: 1.0, animations: {
-            self.ImageFive.transform = CGAffineTransform(scaleX: 5, y: 5)
-            self.ImageFive.transform = CGAffineTransform.identity
-            
-            self.ImageFive.transform = CGAffineTransform(rotationAngle: .pi)
-            self.ImageFive.transform = CGAffineTransform.identity
+        UIView.animate(withDuration: 1.0, animations:
+            {
+                self.ImageFive.transform = CGAffineTransform(scaleX: 5, y: 5)
+                self.ImageFive.transform = CGAffineTransform.identity
+                
+                self.ImageFive.transform = CGAffineTransform(rotationAngle: .pi)
+                self.ImageFive.transform = CGAffineTransform.identity
         })
     }
 
@@ -143,6 +122,7 @@ class ViewController: UIViewController
         imageThree.image = #imageLiteral(resourceName: "three")
         ImageFour.image = #imageLiteral(resourceName: "four")
         ImageFive.image = #imageLiteral(resourceName: "five")
+        labelArray = [myCompScoreLabel, myPlayerScoreLabel,playerLabel, compLabel, computerChoiceLabel, sumLabel, winnerLabel, evenOddLabel]
     }
     
    
@@ -159,27 +139,40 @@ class ViewController: UIViewController
         if sum % 2 == 0
             //even sum
         {
-            view.backgroundColor = UIColor.magenta
+            view.backgroundColor = #colorLiteral(red: 0.998844564, green: 0.6903983131, blue: 0.8053640233, alpha: 1)
             sumLabel.text = "The sum of the numbers is even!"
+            for label in labelArray
+            {
+                label.textColor = .black
+            }
+            rulesLabel.setTitleColor(.blue, for: .normal)
         }
         
         else
             //odd sum
         {
-            view.backgroundColor = UIColor.blue
+            view.backgroundColor = #colorLiteral(red: 0.05153562722, green: 0.7515059213, blue: 1, alpha: 1)
             sumLabel.text = "The sum of the numbers is odd!"
-        }
+            for label in labelArray
+            {
+                label.textColor = .white
+            }
+            rulesLabel.setTitleColor(.red, for: .normal)
         
+        }
         
         if evenOddTextField.text == "even"
         {
             if sum % 2 == 0
             {
                 winnerLabel.text = "You Win! 😃"
+                playerWins()
+                
             }
             else
             {
                 winnerLabel.text = "You Lose 😢"
+                compWins()
             }
         }
         if evenOddTextField.text == "odd"
@@ -187,48 +180,49 @@ class ViewController: UIViewController
             if sum % 2 == 0
             {
                 winnerLabel.text = "You Lose 😢"
+                compWins()
             }
             else
             {
                 winnerLabel.text = "You Win! 😃"
+                playerWins()
             }
         }
         
-//        if myResultLabel.text == "You won."
-//        {
-//            userScore = userScore + 1
-//            myPointsLabel.text = "\(userScore)"
-//        }
-//
-//        else if myResultLabel.text == "You lost."
-//        {
-//            compScore = compScore + 1
-//            computerPointsLabel.text = "\(compScore)"
-//        }
-        
-        // this is the code from my last project that worked,  not sure whats happening but it's better because now it's saying that the var is an int, which is good
-        // the thing is it isn't failing, it will still run, it's just  the scoreboard isn't working at all
-//
-        if winnerLabel.text == "You Lose 😥"
-        {
-            computerScore = computerScore + 1
-           myCompScoreLabel.text = "\(computerScore)"
-        }
-        else if winnerLabel.text == "You win! 😃"
-        {
-            playersScore = playersScore + 1
-            myPlayerScoreLabel.text = "\(playersScore)"
-        }
-
     }
     
-
+    func compWins()
+    {
+        computerScore = computerScore + 1
+        myCompScoreLabel.text = "\(computerScore)"
+        UIView.animate(withDuration: 1.0, animations: {
+            self.myCompScoreLabel.transform = CGAffineTransform(scaleX: 5, y: 5)
+            self.myCompScoreLabel.transform = CGAffineTransform.identity
+            
+            self.myCompScoreLabel.transform = CGAffineTransform(rotationAngle: .pi)
+            self.myCompScoreLabel.transform = CGAffineTransform.identity
+        })
+    }
+    
+    func playerWins()
+    {
+        playersScore = playersScore + 1
+        myPlayerScoreLabel.text = "\(playersScore)"
+        UIView.animate(withDuration: 1.0, animations: {
+            self.myPlayerScoreLabel.transform = CGAffineTransform(scaleX: 5, y: 5)
+            self.myPlayerScoreLabel.transform = CGAffineTransform.identity
+            
+            self.myPlayerScoreLabel.transform = CGAffineTransform(rotationAngle: .pi)
+            self.myPlayerScoreLabel.transform = CGAffineTransform.identity
+        })
+    }
+    
     @IBAction func rulesTapped(_ sender: UIButton)
     {
         guard let url = URL(string: "http://healthy.uwaterloo.ca/museum/VirtualExhibits/Brueghel/odds.html") else { return }
         UIApplication.shared.open(url)
-
     }
+    
     func textFieldReturn(_ textField: UITextField) -> Bool
     {
         self.view.endEditing(true)
