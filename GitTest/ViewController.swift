@@ -6,14 +6,9 @@
 //  Copyright © 2019 Claudia's Apps. All rights reserved.
 //
 
-// Stretches: AppIcon, Animations, Background ColorChanging, Rules link, scoreoard, text color changing(maybe), git hub, reset label
+// Stretches: AppIcon, Animations, Background ColorChanging, Rules link, scoreboard, text color changing(maybe), git hub, reset label
 
 import UIKit
-
-// yep great job changing it and changing the colors looks really good
-// i'll look for more stretches to do but i think we are already at 100
-// i added to the add that once on of the players gets to 10 either the computer or the player the numbers get reseat to nothing, and a label pops up that either says you won this round or you lost this round and that the game is reset.
-
 
 class ViewController: UIViewController
 {
