@@ -8,9 +8,11 @@
 
 // Stretches: AppIcon, Animations, Background ColorChanging, Rules link, scoreboard, text color changing(maybe), git hub, reset label
 
+// emma just letting you know i fixed this bug where it was crashing when clicking out of the keyboard, and i added this things so that when entering odd or even it doesnt matter what letters are capitlilized or not
+
 import UIKit
 
-class ViewController: UIViewController
+class ViewController: UIViewController, UITextFieldDelegate
 {
     @IBOutlet weak var rulesLabel: UIButton!
     @IBOutlet weak var playerLabel: UILabel!
@@ -158,7 +160,7 @@ class ViewController: UIViewController
         
         }
         
-        if evenOddTextField.text == "even"
+        if evenOddTextField.text?.lowercased() == "even"
         {
             if sum % 2 == 0
             {
@@ -172,7 +174,7 @@ class ViewController: UIViewController
                 compWins()
             }
         }
-        if evenOddTextField.text == "odd"
+        if evenOddTextField.text?.lowercased() == "odd"
         {
             if sum % 2 == 0
             {
