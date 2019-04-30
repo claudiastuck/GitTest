@@ -8,8 +8,6 @@
 
 // Stretches: AppIcon, Animations, Background ColorChanging, Rules link, scoreboard, text color changing(maybe), git hub, reset label
 
-// emma just letting you know i fixed this bug where it was crashing when clicking out of the keyboard, and i added this things so that when entering odd or even it doesnt matter what letters are capitlilized or not
-
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate
@@ -188,6 +186,8 @@ class ViewController: UIViewController, UITextFieldDelegate
             }
             
         }
+        
+        // code to allow game to reset
         
         if myPlayerScoreLabel.text == "10"
         {
